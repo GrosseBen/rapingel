@@ -1,2 +1,2 @@
-rapingel.iws
-target/*
+*.iws
+*/target/*
