@@ -1,6 +1,6 @@
 package de.grossesippe.rapingel;
 
-import de.grossesippe.rapingel.resources.Hello;
+import de.grossesippe.rapingel.resources.DoorBell;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -24,7 +24,7 @@ public class rapingelServerApplication extends Application<rapingelServerConfigu
     @Override
     public void run(final rapingelServerConfiguration configuration,
                     final Environment environment) {
-        final Hello resource = new Hello();
+        final DoorBell resource = new DoorBell();
         environment.jersey().register(resource);
     }
 
